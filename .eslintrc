@@ -2,14 +2,6 @@
 // Copy this file, and add rule overrides as needed.
 {
     "extends": "google",
-    "rules": {
-        "indent": [
-            1,
-            4,
-            {
-                "SwitchCase": 1
-            }
-        ],
-        "parser": "babel-eslint"
-    }
+    "parser": "babel-eslint",
+    "rules": {}
 }

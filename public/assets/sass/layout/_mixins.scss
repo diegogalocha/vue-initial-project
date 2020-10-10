@@ -1,0 +1,27 @@
+@mixin border-radius-bottom($val) {
+	border-bottom-left-radius: $val;
+	border-bottom-right-radius: $val;
+}
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin background-gradient-top2bottom($start-color, $end-color) {
+	background-color: $start-color;
+	background-image: linear-gradient(to bottom, $start-color, $end-color);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start-color}', endColorStr='#{$end-color}');
+}
