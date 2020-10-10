@@ -3,6 +3,7 @@
 ## Project setup
 ```
 npm install
+sudo npm install --save-dev  --unsafe-perm node-sass
 ```
 
 ### Compiles and hot-reloads for development
