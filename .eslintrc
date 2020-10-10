@@ -9,6 +9,7 @@
             {
                 "SwitchCase": 1
             }
-        ]
+        ],
+        "parser": "babel-eslint"
     }
 }
