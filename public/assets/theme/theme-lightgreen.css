@@ -1962,7 +1962,7 @@
 .fc .fc-view-container .fc-row {
   border-right: 1px solid #e0e0e0;
 }
-.fc .fc-view-container .fc-event {
+.fc .fc-view-container .fc-event-title {
   background: rgba(139, 195, 74, 0.12);
   border: 1px solid rgba(139, 195, 74, 0.12);
   color: #8BC34A;

@@ -68,9 +68,6 @@ import TriStateCheckbox from 'primevue/tristatecheckbox';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
-import '@fullcalendar/core/main.min.css';
-import '@fullcalendar/daygrid/main.min.css';
-import '@fullcalendar/timegrid/main.min.css';
 import 'prismjs/themes/prism-coy.css';
 
 Vue.use(ToastService);
