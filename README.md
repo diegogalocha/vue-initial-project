@@ -1,4 +1,4 @@
-# serenity
+# Scoutea project
 
 ## Project setup
 ```

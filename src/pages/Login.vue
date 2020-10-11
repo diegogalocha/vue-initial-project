@@ -7,7 +7,7 @@
 			<div class="login-panel-content">
 				<div class="p-grid">
 					<div class="p-col-12">
-						<h1>Sign-in to Serenity Network</h1>
+						<h1>Sign-in to Scoutea Network</h1>
 					</div>
 					<div class="p-col-12">
 						<span class="p-float-label">

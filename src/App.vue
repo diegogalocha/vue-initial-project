@@ -4,7 +4,7 @@
 			<div class="sidebar-logo">
 				<button class="p-link">
 					<img alt="logo" src="assets/layout/images/logo-slim.png" />
-					<span class="app-name">SERENITY</span>
+					<span class="app-name">SCOUTEA</span>
 				</button>
 				<button class="p-link sidebar-anchor" title="Toggle Menu" @click="onToggleMenuClick"> </button>
 			</div>
@@ -53,7 +53,7 @@ export default {
 			topbarMenuActive: null,
 			currentRoute: null,
 			menuActive: false,
-			darkMenu: false,
+			darkMenu: true,
             menu : [
 				{label: 'Dashboard', icon: 'pi pi-fw pi-home', to:'/'},
 				{

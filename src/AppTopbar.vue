@@ -2,7 +2,7 @@
 	<div class="layout-topbar">
 		<button v-if="layoutMode === 'horizontal'" class="p-link topbar-logo">
 			<img alt="logo" src="assets/layout/images/logo-slim.png"/>
-			<span class="app-name">SERENITY</span>
+			<span class="app-name">SCOUTEA</span>
 		</button>
 
 		<img alt="logo" src="assets/layout/images/logo-slim.png" class="mobile-logo"/>
