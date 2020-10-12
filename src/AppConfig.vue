@@ -35,19 +35,6 @@
 				</div>
 			</div>
 
-			<h5 style="margin-top: .5em">Menu Colors</h5>
-			<div class="p-formgroup-inline">
-				<div class="p-field-radiobutton">
-					<RadioButton id="dark" name="darkMenu" :value="true" v-model="d_darkMenu" @change="changeMenuColor($event, true)"/>
-					<label for="dark">Dark</label>
-				</div>
-
-				<div class="p-field-radiobutton">
-					<RadioButton id="light" name="darkMenu" :value="false" v-model="d_darkMenu" @change="changeMenuColor($event, false)"/>
-					<label for="light">Light</label>
-				</div>
-			</div>
-
 			<h5 style="margin-top: .5em">Flat Layouts</h5>
 			<div class="layout-themes">
 				<div v-for="l of layoutColors" :key="l.name">
@@ -87,10 +74,6 @@
 				type: String,
 				default: null
 			},
-			darkMenu: {
-				type: Boolean,
-				default: null
-			},
 			layoutColor: {
 				type: String,
 				default: null
@@ -116,7 +99,6 @@
 			return {
 				active: false,
 				d_layoutMode: this.layoutMode,
-				d_darkMenu: this.darkMenu,
 			}
 		},
 		watch: {
@@ -128,9 +110,6 @@
 			},
 			layoutMode(newValue) {
 				this.d_layoutMode = newValue;
-			},
-			darkMenu(newValue) {
-				this.d_darkMenu = newValue;
 			}
 		},
 		outsideClickListener: null,

@@ -74,7 +74,7 @@ Vue.use(ToastService);
 Vue.directive('tooltip', Tooltip);
 Vue.directive('ripple', Ripple);
 
-Vue.prototype.$appState = Vue.observable({inputStyle: 'outlined'});
+Vue.prototype.$appState = Vue.observable({inputStyle: 'filled'});
 Vue.prototype.$primevue = Vue.observable({ripple: true});
 
 Vue.config.productionTip = false;

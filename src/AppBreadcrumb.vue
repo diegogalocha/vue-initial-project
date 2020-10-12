@@ -6,12 +6,7 @@
 		</ul>
 
 		<div class="layout-breadcrumb-options">
-			<button class="p-link" title="Backup">
-				<i class="pi pi-cloud-upload"></i>
-			</button>
-			<button class="p-link" title="Bookmark">
-				<i class="pi pi-bookmark"></i>
-			</button>
+			<InputSwitch v-model="d_darkMenu" @change="changeMenuColor($event, d_darkMenu)" />
 			<button class="p-link" title="Logout">
 				<i class="pi pi-power-off"></i>
 			</button>
@@ -21,9 +16,29 @@
 
 <script>
 	export default {
+		props: {
+			darkMenu: {
+				type: Boolean,
+				default: null
+			}
+		},
+		data() {
+			return {
+				d_darkMenu: this.darkMenu
+			}
+		},
+		watch: {
+			darkMenu(newValue) {
+				this.d_darkMenu = newValue;
+			}
+		},
 		methods: {
 			home() {
 				window.location = "/#/"
+			},
+			changeMenuColor(event, menuColor) {
+				this.$emit('menu-color-change', menuColor);
+				event.preventDefault();
 			}
 		}
 	}

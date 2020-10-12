@@ -7,6 +7,12 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
+			name: 'desktop',
+			exact: true,
+			component: () => import('./components/Desktop.vue')
+		},
+		{
+			path: '/dashboard',
 			name: 'dashboard',
 			exact: true,
 			component: () => import('./components/Dashboard.vue')
